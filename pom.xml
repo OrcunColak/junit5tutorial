@@ -47,6 +47,11 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.junit.vintage</groupId>
+            <artifactId>junit-vintage-engine</artifactId>
+        </dependency>
+
     </dependencies>
 
 </project>
