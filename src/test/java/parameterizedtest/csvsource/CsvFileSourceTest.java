@@ -1,4 +1,4 @@
-package parameterizedtest;
+package parameterizedtest.csvsource;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.params.ParameterizedTest;

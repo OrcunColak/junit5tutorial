@@ -1,4 +1,4 @@
-package parameterizedtest;
+package parameterizedtest.valuesource;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -19,7 +19,7 @@ import org.junit.jupiter.params.provider.ValueSource;
  * java.lang.Class
  */
 @Slf4j
-class ValueSourceTest {
+class ValueSourceStringsTest {
 
     @ParameterizedTest
     @ValueSource(strings = {"racecar", "radar", "able was I ere I saw elba" , " ", "   ", "\t", "\n"})
