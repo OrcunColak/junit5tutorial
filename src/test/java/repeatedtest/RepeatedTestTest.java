@@ -1,6 +1,7 @@
 package repeatedtest;
 
 import org.junit.jupiter.api.RepeatedTest;
+import org.junit.jupiter.api.RepetitionInfo;
 
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -15,5 +16,12 @@ class RepeatedTestTest {
     void myRepeatedTest() {
         int result = ThreadLocalRandom.current().nextInt(1, 10);
         assertTrue(result > 5, "Result should be greater than 0");
+    }
+
+    @RepeatedTest(value = 5, name = "Running test {currentRepetition} of {totalRepetitions}")
+    void repeatedTest(RepetitionInfo repInfo) {
+        System.out.println("Test " + repInfo.getCurrentRepetition() +
+                           " of " + repInfo.getTotalRepetitions());
+        // Your test logic here
     }
 }
