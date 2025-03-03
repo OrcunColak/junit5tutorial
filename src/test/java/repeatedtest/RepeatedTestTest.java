@@ -6,6 +6,9 @@ import java.util.concurrent.ThreadLocalRandom;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+// Sometimes a test might pass 99% of the time but fail occasionally due to race conditions or timing issues.
+//
+// @RepeatedTest helps identify these flaky tests by running them multiple times.
 class RepeatedTestTest {
 
     @RepeatedTest(3)
