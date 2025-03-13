@@ -13,6 +13,9 @@ import java.util.stream.Stream;
  */
 class DisplayNameTest {
 
+    // Parameterized test for  docker images
+    //  1 gvenzl/oracle-free:23-slim-faststart
+    //  2 gvenzl/oracle-xe:21-slim-faststart
     @DisplayName("Parameterized test for  docker images")
     // If we don't provide a name then the test name is "," join of all parameters. But this is not readable
     // Here we are using the first parameter as test display name
